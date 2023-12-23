@@ -1,3 +1,4 @@
-import '../../script/test'
+import { message } from '../../script/test';
 
-console.log('container')
+console.log('container');
+console.log(message);

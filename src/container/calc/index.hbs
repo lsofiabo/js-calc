@@ -1,0 +1,33 @@
+<main>
+	<div class="calculator">
+		<div class="calculator__display" id='result'>
+			0
+		</div>
+		<div class="calculator__keys calculator__keys--big">
+			<button onclick="calc.add(9)">9</button>
+			<button onclick="calc.add(8)">8</button>
+			<button onclick="calc.add(7)">7</button>
+			<button onclick="calc.add(6)">6</button>
+			<button onclick="calc.add(5)">5</button>
+			<button onclick="calc.add(4)">4</button>
+			<button onclick="calc.add(3)">3</button>
+			<button onclick="calc.add(2)">2</button>
+			<button onclick="calc.add(1)">1</button>
+			<button onclick="calc.add(0)">0</button>
+			<button onclick="calc.dot()">.</button>
+		</div>
+		<div class="calculator__keys calculator__keys--small">
+			<button class='button--operator' onclick="calc.operation('+')">+</button>
+			<button class='button--operator' onclick="calc.operation('-')">-</button>
+			<button class='button--operator' onclick="calc.operation('/')">/</button>
+			<button class='button--operator' onclick="calc.operation('*')">*</button>
+		</div>
+		<div class="calculator__keys calculator__keys--small">
+			<button class='button--equals' onclick="calc.equals()">=</button>
+			<button class='button--operator' onclick="calc.reset()">C</button>
+		</div>
+	</div>
+	<script>
+		calc.init();
+	</script>
+</main>
